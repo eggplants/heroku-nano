@@ -1,5 +1,5 @@
-import { Command, flags } from '@heroku-cli/command'
-import { Dyno } from '@heroku-cli/plugin-run-v5'
+import {Command, flags} from '@heroku-cli/command'
+import {Dyno} from '@heroku-cli/plugin-run-v5'
 
 export default class AppCommand extends Command {
   static description = 'Install Nano and use it in a dyno'
