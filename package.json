@@ -1,7 +1,7 @@
 {
   "name": "heroku-nano",
   "description": "Install Nano and use it in a Heroku dyno",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "@eggplants",
   "bugs": "https://github.com/eggplants/heroku-nano/issues",
   "dependencies": {

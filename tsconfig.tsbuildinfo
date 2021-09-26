@@ -582,7 +582,7 @@
         "affectsGlobalScope": false
       },
       "./src/commands/nano.ts": {
-        "version": "11f2d215ec7401b5be3383fcf734d0f97b8c4079c159dc8ddbd2aedcdf5d8d27",
+        "version": "6f0e2c1efe08b388c66d94393443b99c209660ed0a8eea6c4a095176b99e52e6",
         "signature": "475270ea7f4b5340d11b3827807da698fc15b0aea27a6e1ea1ec515049376952",
         "affectsGlobalScope": false
       },
