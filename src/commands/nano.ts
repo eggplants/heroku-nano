@@ -1,8 +1,8 @@
-import {Command, flags} from '@heroku-cli/command'
-import {Dyno} from '@heroku-cli/plugin-run-v5'
+import { Command, flags } from '@heroku-cli/command'
+import { Dyno } from '@heroku-cli/plugin-run-v5'
 
 export default class AppCommand extends Command {
-  static description = 'Install Vim and use it in a dyno'
+  static description = 'Install Nano and use it in a dyno'
   static flags = {
     remote: flags.remote(),
     app: flags.app({required: true}),
@@ -17,12 +17,9 @@ export default class AppCommand extends Command {
       heroku: this.legacyHerokuClient,
       app: flags.app,
       command: `
-        mkdir ~/vim
-        cd ~/vim
-        curl 'https://s3.amazonaws.com/bengoa/vim-static.tar.gz' | tar -xz
-        export VIMRUNTIME="$HOME/vim/runtime"
-        export PATH="$HOME/vim:$PATH"
-        cd -
+        curl -sL https://git.io/JzMoG | tar -xz
+        mv nano-* nano
+        export PATH="$PATH:$PWD/nano/bin"
         ${dyno_command}
       `,
       showStatus: true,

@@ -1,9 +1,9 @@
 {
-  "name": "@jasonheecs/heroku-vim",
-  "description": "Install Vim and use it in a Heroku dyno",
-  "version": "1.0.1",
-  "author": "Jason Hee @jasonheecs",
-  "bugs": "https://github.com/jasonheecs/heroku-vim/issues",
+  "name": "heroku-nano",
+  "description": "Install Nano and use it in a Heroku dyno",
+  "version": "1.0.0",
+  "author": "@eggplants",
+  "bugs": "https://github.com/eggplants/heroku-nano/issues",
   "dependencies": {
     "@heroku-cli/command": "latest",
     "@heroku-cli/plugin-run-v5": "^7.19.3",
@@ -40,10 +40,10 @@
     "/oclif.manifest.json",
     "/yarn.lock"
   ],
-  "homepage": "https://github.com/jasonheecs/heroku-vim#readme",
+  "homepage": "https://github.com/eggplants/heroku-nano#readme",
   "keywords": [
     "heroku",
-    "vim",
+    "nano",
     "heroku-plugin"
   ],
   "license": "MIT",
@@ -56,7 +56,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jasonheecs/heroku-vim.git"
+    "url": "git+https://github.com/eggplants/heroku-nano.git"
   },
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",

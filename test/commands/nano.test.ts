@@ -1,6 +1,6 @@
-import {expect, test} from '@oclif/test'
+import { test } from '@oclif/test';
 
-describe('vim', () => {
+describe('nano', () => {
   test
     .nock('https://api.heroku.com', api => api
       .post('/apps/testapp/dynos')
@@ -15,7 +15,7 @@ describe('vim', () => {
       .get('/apps/testapp/dynos/testdyno')
       .reply(404)
     )
-    .command(['vim', '-a=testapp'])
+    .command(['nano', '-a=testapp'])
     .exit(100)
     .catch(/404/)
     .it('makes request to create and attach to heroku dyno');
