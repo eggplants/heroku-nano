@@ -1,7 +1,7 @@
 {
   "name": "heroku-nano",
   "description": "Install Nano and use it in a Heroku dyno",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "author": "@eggplants",
   "bugs": "https://github.com/eggplants/heroku-nano/issues",
   "dependencies": {
@@ -61,7 +61,7 @@
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "tslint -p test -t stylish",
-    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "prepack": "tsc && oclif-dev manifest && oclif-dev readme",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif-dev readme && git add README.md",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
