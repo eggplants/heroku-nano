@@ -1,5 +1,7 @@
 # heroku-nano
 
+[![npm](https://img.shields.io/npm/v/heroku-nano)](https://www.npmjs.com/package/heroku-nano)
+
 A Heroku plugin that allows you to use nano in a dyno
 
 ## Installation
